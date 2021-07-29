@@ -1,0 +1,265 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+
+body {
+  font-family: "Merriweather", sans-serif;
+  background-color: #ebf2ff;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+section {
+  margin: 4rem 0;
+}
+
+/* Custom */
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hide__mobile {
+  display: none !important;
+}
+
+.head-text{
+  position: relative;
+  width:100%;
+  color: rgb(0, 0, 0);
+  font-weight: bold;  
+  height:60vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background:url(./images/head.jpg);
+}
+.text1{
+  transform:translate(+100%,-40%);
+  color:white;
+  font-weight:900;
+  font-size:x-large;
+}
+.text2{
+  transform: translate(-30%,+90%);
+  color:white;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to right,#ef473a,#cb2d3e);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  z-index: 9999;
+}
+
+.navbar__brand {
+  width: 100px;
+}
+.button__primary {
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+}
+
+.button__primary {
+  margin: 10px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-transform: capitalize;
+  transition: 0.5s;
+  font-weight: 600;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 4px;
+  display: block;
+}
+.button__primary:hover {
+  background-position: right center;
+  /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+.brand__logo {
+  opacity: 70%;
+  width: 100%;
+}
+.nav__item{
+  margin-right: 8px;
+}
+.nav-list{
+  display:flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 8px;
+  margin:10px;
+  background-image: linear-gradient(
+    to right,
+    #ff512f 0%,
+    #dd2476 51%,
+    #ff512f 100%
+  );
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+}
+li a:hover {
+  background-image: linear-gradient(
+    to right,
+    #dd2476 0%,
+    #ff512f 51%,
+    #dd2476 100%
+  );
+}
+
+
+.row{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  padding-top:10px;
+
+  margin-top:10px;
+
+  flex-wrap: wrap;
+}
+.text-center {
+  text-align: center!important;
+}
+
+.font-weight-bold {
+  font-weight: 700!important;
+}
+.text-uppercase {
+  text-transform: uppercase!important;
+}
+.mb-4, .my-4 {
+  margin-bottom: 1.5rem!important;
+}
+.h5, h5 {
+  font-size: 1.25rem;
+}
+.text-muted {
+  color: #6c757d!important;
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+.restaurants {
+  flex-wrap: wrap;
+  /* flex: 1; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  margin-left:30px;
+  justify-content:flex-start;
+  flex-direction: row;
+  margin-top: 10px;
+  padding: 20px;
+
+}
+.hotel-card {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid lightgray;
+}
+#fav-id {
+  background: white;
+}
+button.favourite {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  /* float: left; */
+  align-self: flex-end;
+  border: none;
+  position: absolute;
+  outline: transparent;
+}
+.hotel-name {
+  font-weight: bold;
+  padding: 0 10px;
+}
+.hotel-tags {
+  font-size: 10px;
+  padding: 10px;
+}
+.hotel-location {
+  background: orange;
+  width: 51px;
+  padding: 5px;
+  color: white;
+}
+.fa-star:before {
+  content: '\f006';
+  font-family: FontAwesome;
+  font-weight: 200;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.hotel-eta {
+  font-size: 12px;
+}
+.col-12{
+  background:linear-gradient(to right,#ef473a,#cb2d3e);
+  width:100%;
+  height:10vh;
+}
+.footer-copyright{
+  width:90vw;
+}
+.navbar{
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

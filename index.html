@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zomato Landing Page</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link
+    href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header>
+
+    <nav class="navbar">
+      <div class="navbar__brand">
+        <h2 style="color:white; margin-left:15px;"><a href="#" style="color:white;" class="logo-front" onMouseOver="this.style.color='#000000'"
+            onMouseOut="this.style.color='#FFFFFF'">Zomato</a></h2>
+      </div>
+      <div class="navbar__nav__items">
+        <div class="nav__item">
+          
+          <ul class="nav-list">
+          <button class="button__primary" style="font-weight:900;">Order Food</button>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">SignUp</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="head-text">
+      <div class="text1">
+      <h1>Zomato</h1>
+      </div>
+      <div>
+      <h2 class="text2">Discover the best food and drinks</h2>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="restaurants">
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 63660)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/1.jpg" style="width: 231px;height: 147px;">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Pulao</div>
+              <div class="hotel-tags">Cafe,Chennai,Healthy Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.4</span>
+                  <span class="hotel-eta">51 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 68159)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/11.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Koolchas</div>
+              <div class="hotel-tags">North Indian,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.3</span>
+                  <span class="hotel-eta">53 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 20423)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/1.png">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Subway(MCF)</div>
+              <div class="hotel-tags">American,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.2</span>
+                  <span class="hotel-eta">25 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 26761)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/10.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Madurai Meenakshi Bhawan</div>
+              <div class="hotel-tags">American,South Indian</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.2</span>
+                  <span class="hotel-eta">25 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 29123)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/9.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Royal Spice</div>
+              <div class="hotel-tags">Indian,Chinese,Continental,Snacks</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.1</span>
+                  <span class="hotel-eta">31 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 17281)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/14.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Mucchad's SamosaZz </div>
+              <div class="hotel-tags">Mughlai,North Indian,Street Food,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.1</span>
+                  <span class="hotel-eta">43 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 30361)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/7.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Chinese Corner</div>
+              <div class="hotel-tags">Chinese,Thai</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.1</span>
+                  <span class="hotel-eta">47 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 23893)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/6.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">South Store</div>
+              <div class="hotel-tags">American,South Indian</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.1</span>
+                  <span class="hotel-eta">53 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 21340)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/13.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Burger BC</div>
+              <div class="hotel-tags">Fast Food,Continental</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4.1</span>
+                  <span class="hotel-eta">57 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 1015)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/5.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Fork with Sticks</div>
+              <div class="hotel-tags">Chinese,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">4</span>
+                  <span class="hotel-eta">44 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 63913)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/15.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">The Burger Homes</div>
+              <div class="hotel-tags">North Indian,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">3.9</span>
+                  <span class="hotel-eta">45 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 13018)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/4.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Rasoi</div>
+              <div class="hotel-tags">Indian,Chinese,North Indian</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">3.9</span>
+                  <span class="hotel-eta">50 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 27213)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/2.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Prince Ki Rasoi</div>
+              <div class="hotel-tags">North Indian,Chinese,Mughlai,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">3.8</span>
+                  <span class="hotel-eta">30 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 49213)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/12.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Punjabi Chaap Corner</div>
+              <div class="hotel-tags">North Indian,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">3.8</span>
+                  <span class="hotel-eta">52 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 51766)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/16.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">STANLEY KA DIBBA</div>
+              <div class="hotel-tags">American,Thalis,Indian,Fast Food</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">3.7</span>
+                  <span class="hotel-eta">41 Mins</span>
+              </div>
+          </div>
+      </div>
+  
+      <div class="hotel-card">
+          <button onclick="markAsFavourite(this, 52778)" id="fav-id" class="favourite"></button>
+          <div class="hotel-image">
+              <img src="./images/3.jpg">
+          </div>
+          <div class="hotel-description">
+              <div class="hotel-name">Wally Sweets &amp; Restaurant</div>
+              <div class="hotel-tags">North Indian,Chinese,Sweets</div>
+              <div style="padding: 0 10px;">
+                  <span class="hotel-location fa fa-star checked">3.4</span>
+                  <span class="hotel-eta">25 Mins</span>
+              </div>
+          </div>
+      </div>
+  </div>
+   <hr> 
+    
+  </main>
+
+  <footer class="page-footer font-small mdb-color lighten-3 pt-4 footerCustom">
+    <div class="container text-center text-md-left">
+      <div class="row">
+        <div class="col-md-2 col-lg-2 mr-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4"><i>Zomato</i></h5>
+          <a href="#" class="text-muted">who we are</a><br>
+          <a href="#" class="text-muted">Blog</a><br>
+          <a href="#" class="text-muted">Careers</a><br>
+          <a href="#" class="text-muted">Report Fraud</a><br>
+          <a href="#" class="text-muted">Contact</a><br>
+        </div>
+
+        <div class="col-md-2 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">For foodies</h5>
+          <a href="#" class="text-muted">Code of Conduct</a><br>
+          <a href="#" class="text-muted">Community</a><br>
+          <a href="#" class="text-muted">Blogger Help</a><br>
+          <a href="#" class="text-muted">Developers</a><br>
+          <a href="#" class="text-muted">Mobile Apps</a><br>
+        </div>
+
+        <div class="col-md-3 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+          <h5 class="font-weight-bold text-uppercase mb-4">For restaurants</h5>
+          <a href="#" class="text-muted">Add Restaurant</a><br>
+          <a href="#" class="text-muted">Claim Your Listing</a><br>
+          <a href="#" class="text-muted">Business App</a><br>
+          <a href="#" class="text-muted">Restaurant Widgets</a><br>
+          <a href="#" class="text-muted">Products for Business</a><br>
+        </div>
+
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+          <h5 class="font-weight-bold text-uppercase mb-4">For You</h5>
+          <a href="#" class="text-muted">Privacy</a><br>
+          <a href="#" class="text-muted">Terms</a><br>
+          <a href="#" class="text-muted">Security</a><br>
+          <a href="#" class="text-muted">Sitemap</a><br>
+        </div>
+
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+          <h5 class="font-weight-bold text-uppercase mb-4">Social Links</h5>
+          <a href="#" class="text-muted">Facebook</a><br>
+          <a href="#" class="text-muted">Twitter</a><br>
+          <a href="#" class="text-muted">Instagram</a><br>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <hr>
+          <div class="footer-copyright text-center text-small py-3">
+            <small>
+              By continuing past this page, you agree to our Terms of Service, Cookie Policy, Privacy Policy and Content Policies. All trademarks are properties of their respective owners. 2021 © Zomato™ Pvt Ltd. All rights reserved.
+            </small> 
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </footer>
+</body>
+
+</html>
